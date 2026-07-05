@@ -44,10 +44,22 @@ export default function HeroSection() {
 
         {/* Heading */}
         <div className="overflow-hidden z-20 relative">
+          <FadeIn delay={0.1} y={20}>
+            <span className="inline-block text-[#4A90D9] font-semibold uppercase tracking-[0.3em] text-xs sm:text-sm mb-4">
+              01 — The Problem
+            </span>
+          </FadeIn>
+
           <FadeIn delay={0.15} y={40} duration={0.9}>
             <h1 className="text-[#EBA746] font-black uppercase tracking-tight leading-none w-full text-[clamp(2.75rem,10vw,140px)]">
               HELLO, I&apos;M THẢO VÂN
             </h1>
+          </FadeIn>
+
+          <FadeIn delay={0.25} y={20} duration={0.8}>
+            <p className="text-[#2B3440] font-medium max-w-xl mt-6 sm:mt-8 text-[clamp(1rem,1.8vw,1.35rem)] leading-relaxed">
+              Every day, brands lose their audience in three seconds of scrolling — buried under noise, forgotten before the message even lands.
+            </p>
           </FadeIn>
 
           {/* Skill tags */}
@@ -68,7 +80,7 @@ export default function HeroSection() {
         <div className="flex justify-between items-end pb-7 sm:pb-8 md:pb-10 z-20 w-full">
           <FadeIn delay={0.35} y={20}>
             <p className="text-[#2B3440] font-light uppercase tracking-wide leading-snug max-w-[160px] sm:max-w-[220px] md:max-w-[260px] text-[clamp(0.75rem,1.4vw,1.5rem)]">
-              a communications student passionate about storytelling and creative campaigns
+              a communications student who makes sure yours doesn&apos;t
             </p>
           </FadeIn>
 

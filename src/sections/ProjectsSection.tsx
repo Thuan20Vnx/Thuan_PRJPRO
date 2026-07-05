@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import FadeIn from '../components/FadeIn';
 import LiveProjectButton from '../components/LiveProjectButton';
+import ContactButton from '../components/ContactButton';
 
 const PROJECTS = [
   {
@@ -98,22 +99,44 @@ function ProjectCard({ project, index, totalCards }: ProjectCardProps) {
 export default function ProjectsSection() {
   return (
     <section id="projects" className="bg-gradient-to-b from-[#EAF3FF] to-[#FDF6EC] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 z-10 relative px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32">
-      <FadeIn delay={0}>
-        <h2 className="hero-heading font-black uppercase text-center text-[clamp(3rem,12vw,160px)] leading-none mb-16 sm:mb-20 md:mb-28">
+      <FadeIn delay={0} y={20}>
+        <span className="block text-[#4A90D9] font-semibold uppercase tracking-[0.3em] text-xs sm:text-sm text-center mb-4">
+          04 — The Proof
+        </span>
+      </FadeIn>
+
+      <FadeIn delay={0.05}>
+        <h2 className="hero-heading font-black uppercase text-center text-[clamp(3rem,12vw,160px)] leading-none mb-6">
           Project
         </h2>
       </FadeIn>
+
+      <FadeIn delay={0.1}>
+        <p className="text-[#2B3440]/60 font-light text-center max-w-xl mx-auto mb-16 sm:mb-20 md:mb-28 text-[clamp(0.9rem,1.6vw,1.15rem)]">
+          Here&apos;s that toolkit at work — real campaigns, real results.
+        </p>
+      </FadeIn>
       
-      <div className="flex flex-col relative pb-[20vh]">
+      <div className="flex flex-col relative pb-16 sm:pb-20">
         {PROJECTS.map((project, index) => (
-          <ProjectCard 
-            key={project.num} 
-            project={project} 
-            index={index} 
-            totalCards={PROJECTS.length} 
+          <ProjectCard
+            key={project.num}
+            project={project}
+            index={index}
+            totalCards={PROJECTS.length}
           />
         ))}
       </div>
+
+      <FadeIn delay={0} className="flex flex-col items-center gap-6 text-center max-w-xl mx-auto">
+        <span className="text-[#4A90D9] font-semibold uppercase tracking-[0.3em] text-xs sm:text-sm">
+          05 — Let&apos;s Talk
+        </span>
+        <h3 className="text-[#2B3440] font-black uppercase leading-tight text-[clamp(1.5rem,4vw,2.75rem)]">
+          Ready to turn your story into something people remember?
+        </h3>
+        <ContactButton />
+      </FadeIn>
     </section>
   );
 }

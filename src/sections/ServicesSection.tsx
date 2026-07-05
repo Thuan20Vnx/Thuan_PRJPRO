@@ -32,10 +32,22 @@ export default function ServicesSection() {
   return (
     <section className="bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32">
       <div className="max-w-5xl mx-auto flex flex-col">
-        <FadeIn delay={0}>
-          <h2 className="text-[#0C0C0C] font-black uppercase text-center text-[clamp(3rem,12vw,160px)] leading-none mb-16 sm:mb-20 md:mb-28">
+        <FadeIn delay={0} y={20}>
+          <span className="block text-[#4A90D9] font-semibold uppercase tracking-[0.3em] text-xs sm:text-sm text-center mb-4">
+            03 — The Toolkit
+          </span>
+        </FadeIn>
+
+        <FadeIn delay={0.05}>
+          <h2 className="text-[#0C0C0C] font-black uppercase text-center text-[clamp(3rem,12vw,160px)] leading-none mb-6">
             Services
           </h2>
+        </FadeIn>
+
+        <FadeIn delay={0.1}>
+          <p className="text-[#0C0C0C]/60 font-light text-center max-w-xl mx-auto mb-16 sm:mb-20 md:mb-28 text-[clamp(0.9rem,1.6vw,1.15rem)]">
+            Here&apos;s the mix of skills I rely on to turn that noise into a message people actually remember.
+          </p>
         </FadeIn>
 
         <div className="flex flex-col w-full">

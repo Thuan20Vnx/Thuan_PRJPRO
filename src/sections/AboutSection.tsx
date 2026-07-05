@@ -25,7 +25,13 @@ export default function AboutSection() {
 
       {/* Main Content */}
       <div className="z-10 flex flex-col items-center gap-10 sm:gap-14 md:gap-16 w-full max-w-7xl">
-        <FadeIn delay={0} y={40}>
+        <FadeIn delay={0} y={20}>
+          <span className="block text-[#4A90D9] font-semibold uppercase tracking-[0.3em] text-xs sm:text-sm text-center mb-4">
+            02 — The Approach
+          </span>
+        </FadeIn>
+
+        <FadeIn delay={0.05} y={40}>
           <h2 className="hero-heading font-black uppercase leading-none tracking-tight text-center text-[clamp(3rem,12vw,160px)]">
             About me
           </h2>
@@ -33,7 +39,7 @@ export default function AboutSection() {
 
         <div className="flex flex-col items-center gap-16 sm:gap-20 md:gap-24 w-full">
           <AnimatedText
-            text="I'm a communications student passionate about storytelling, media production, and connecting brands with the people who matter to them. I enjoy working on content strategy, event communications, and creative campaigns that leave a lasting impression. Let's build something meaningful together!"
+            text="I turn that noise into narratives worth stopping for. As a communications student, I combine content strategy, media production, and public relations to help brands earn attention — and keep it. Every story I shape is built to connect, not just to be seen."
             className="text-[#2B3440] font-medium text-center leading-relaxed max-w-[560px] text-[clamp(1rem,2vw,1.35rem)]"
           />
 
