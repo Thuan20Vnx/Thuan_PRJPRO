@@ -39,11 +39,29 @@ export default function HeroSection() {
         ))}
       </FadeIn>
 
+      {/* Large portrait (desktop only) */}
+      <FadeIn
+        delay={0.3}
+        x={60}
+        y={0}
+        duration={1}
+        className="hidden lg:flex absolute right-0 xl:right-8 top-28 bottom-32 z-10 w-[320px] xl:w-[400px] items-center pointer-events-none"
+      >
+        <div className="relative w-full h-full">
+          <div className="absolute -inset-8 rounded-full bg-gradient-to-br from-[#EBA746]/30 to-[#4A90D9]/30 blur-3xl" />
+          <img
+            src="/thao-van-portrait.jpg"
+            alt="Thảo Vân portrait"
+            className="relative w-full h-full object-cover rounded-[48px] border-2 border-white shadow-2xl"
+          />
+        </div>
+      </FadeIn>
+
       {/* Main Content Area */}
       <div className="flex-1 flex flex-col justify-between relative px-6 md:px-10 pt-10 md:pt-14 gap-10">
 
         {/* Heading */}
-        <div className="overflow-hidden z-20 relative">
+        <div className="overflow-hidden z-20 relative lg:max-w-[65%]">
           <FadeIn delay={0.1} y={20}>
             <span className="inline-block text-[#4A90D9] font-semibold uppercase tracking-[0.3em] text-xs sm:text-sm mb-4">
               01 — The Problem
@@ -56,35 +74,20 @@ export default function HeroSection() {
             </h1>
           </FadeIn>
 
-          <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12 mt-6 sm:mt-8">
-            <FadeIn delay={0.25} y={20} duration={0.8}>
-              <p className="text-[#2B3440] font-medium max-w-xl text-[clamp(1rem,1.8vw,1.35rem)] leading-relaxed">
-                Every day, brands lose their audience in three seconds of scrolling — buried under noise, forgotten before the message even lands.
-              </p>
-            </FadeIn>
+          <FadeIn delay={0.25} y={20} duration={0.8}>
+            <p className="text-[#2B3440] font-medium max-w-xl mt-6 sm:mt-8 text-[clamp(1rem,1.8vw,1.35rem)] leading-relaxed">
+              Every day, brands lose their audience in three seconds of scrolling — buried under noise, forgotten before the message even lands.
+            </p>
+          </FadeIn>
 
-            <div className="hidden md:flex items-center gap-4 shrink-0">
-              <FadeIn delay={0.4} y={20} duration={0.8}>
-                <div className="flex items-center gap-4 rounded-3xl border border-[#2B3440]/15 bg-white/50 backdrop-blur-sm px-6 py-5">
-                  <span className="text-[#EBA746] font-black text-4xl lg:text-5xl leading-none">3s</span>
-                  <span className="text-[#2B3440]/70 font-medium text-sm max-w-[140px] leading-snug">
-                    is all it takes to lose your audience&apos;s attention
-                  </span>
-                </div>
-              </FadeIn>
-
-              <FadeIn delay={0.5} x={20} y={0} duration={0.8} className="hidden lg:block shrink-0">
-                <div className="relative">
-                  <div className="absolute -inset-3 rounded-[28px] bg-gradient-to-br from-[#EBA746]/30 to-[#4A90D9]/30 blur-xl" />
-                  <img
-                    src="/thao-van-portrait.jpg"
-                    alt="Thảo Vân portrait"
-                    className="relative w-[130px] h-[160px] xl:w-[150px] xl:h-[180px] object-cover rounded-3xl border-2 border-white shadow-xl"
-                  />
-                </div>
-              </FadeIn>
+          <FadeIn delay={0.4} y={20} duration={0.8} className="hidden md:inline-block mt-8 sm:mt-10">
+            <div className="flex items-center gap-4 rounded-3xl border border-[#2B3440]/15 bg-white/50 backdrop-blur-sm px-6 py-5 w-fit">
+              <span className="text-[#EBA746] font-black text-4xl lg:text-5xl leading-none">3s</span>
+              <span className="text-[#2B3440]/70 font-medium text-sm max-w-[140px] leading-snug">
+                is all it takes to lose your audience&apos;s attention
+              </span>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Skill tags */}
           <FadeIn delay={0.3} y={20} className="flex flex-wrap gap-3 mt-8 sm:mt-10 md:mt-12">
@@ -108,7 +111,7 @@ export default function HeroSection() {
             </p>
           </FadeIn>
 
-          <FadeIn delay={0.5} y={20} id="contact">
+          <FadeIn delay={0.5} y={20} id="contact" className="relative z-20">
             <ContactButton />
           </FadeIn>
         </div>
@@ -116,7 +119,7 @@ export default function HeroSection() {
         {/* Scroll cue */}
         <FadeIn
           delay={0.7}
-          className="hidden sm:flex flex-col items-center gap-2 absolute left-1/2 -translate-x-1/2 bottom-2 text-[#2B3440]/60"
+          className="hidden sm:flex flex-col items-center gap-2 absolute left-1/2 -translate-x-1/2 bottom-2 text-[#2B3440]/60 z-20"
         >
           <span className="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
           <ArrowDown size={16} className="animate-bounce" />
