@@ -80,15 +80,6 @@ export default function HeroSection() {
             </p>
           </FadeIn>
 
-          <FadeIn delay={0.4} y={20} duration={0.8} className="hidden md:inline-block mt-8 sm:mt-10">
-            <div className="flex items-center gap-4 rounded-3xl border border-[#2B3440]/15 bg-white/50 backdrop-blur-sm px-6 py-5 w-fit">
-              <span className="text-[#EBA746] font-black text-4xl lg:text-5xl leading-none">3s</span>
-              <span className="text-[#2B3440]/70 font-medium text-sm max-w-[140px] leading-snug">
-                is all it takes to lose your audience&apos;s attention
-              </span>
-            </div>
-          </FadeIn>
-
           {/* Skill tags */}
           <FadeIn delay={0.3} y={20} className="flex flex-wrap gap-3 mt-8 sm:mt-10 md:mt-12">
             {SKILL_TAGS.map(({ icon: Icon, label }) => (
