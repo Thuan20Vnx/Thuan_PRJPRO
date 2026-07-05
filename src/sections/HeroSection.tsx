@@ -56,21 +56,34 @@ export default function HeroSection() {
             </h1>
           </FadeIn>
 
-          <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12 mt-6 sm:mt-8">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12 mt-6 sm:mt-8">
             <FadeIn delay={0.25} y={20} duration={0.8}>
               <p className="text-[#2B3440] font-medium max-w-xl text-[clamp(1rem,1.8vw,1.35rem)] leading-relaxed">
                 Every day, brands lose their audience in three seconds of scrolling — buried under noise, forgotten before the message even lands.
               </p>
             </FadeIn>
 
-            <FadeIn delay={0.4} y={20} duration={0.8} className="hidden md:block shrink-0">
-              <div className="flex items-center gap-4 rounded-3xl border border-[#2B3440]/15 bg-white/50 backdrop-blur-sm px-6 py-5">
-                <span className="text-[#EBA746] font-black text-4xl lg:text-5xl leading-none">3s</span>
-                <span className="text-[#2B3440]/70 font-medium text-sm max-w-[140px] leading-snug">
-                  is all it takes to lose your audience&apos;s attention
-                </span>
-              </div>
-            </FadeIn>
+            <div className="hidden md:flex items-center gap-4 shrink-0">
+              <FadeIn delay={0.4} y={20} duration={0.8}>
+                <div className="flex items-center gap-4 rounded-3xl border border-[#2B3440]/15 bg-white/50 backdrop-blur-sm px-6 py-5">
+                  <span className="text-[#EBA746] font-black text-4xl lg:text-5xl leading-none">3s</span>
+                  <span className="text-[#2B3440]/70 font-medium text-sm max-w-[140px] leading-snug">
+                    is all it takes to lose your audience&apos;s attention
+                  </span>
+                </div>
+              </FadeIn>
+
+              <FadeIn delay={0.5} x={20} y={0} duration={0.8} className="hidden lg:block shrink-0">
+                <div className="relative">
+                  <div className="absolute -inset-3 rounded-[28px] bg-gradient-to-br from-[#EBA746]/30 to-[#4A90D9]/30 blur-xl" />
+                  <img
+                    src="/thao-van-portrait.jpg"
+                    alt="Thảo Vân portrait"
+                    className="relative w-[130px] h-[160px] xl:w-[150px] xl:h-[180px] object-cover rounded-3xl border-2 border-white shadow-xl"
+                  />
+                </div>
+              </FadeIn>
+            </div>
           </div>
 
           {/* Skill tags */}
