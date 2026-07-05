@@ -24,7 +24,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex flex-col overflow-x-clip">
+    <section id="home" className="relative min-h-[auto] lg:min-h-screen flex flex-col overflow-x-clip">
       {/* Navbar */}
       <FadeIn delay={0} y={-20} as="nav" className="flex justify-between items-center px-6 md:px-10 pt-6 md:pt-8 w-full z-20">
         {NAV_ITEMS.map((item) => (
@@ -58,7 +58,7 @@ export default function HeroSection() {
       </FadeIn>
 
       {/* Main Content Area */}
-      <div className="flex-1 flex flex-col justify-between relative px-6 md:px-10 pt-10 md:pt-14 gap-10">
+      <div className="flex-1 flex flex-col justify-start lg:justify-between relative px-6 md:px-10 pt-10 md:pt-14 pb-12 lg:pb-0 gap-16 lg:gap-10">
 
         {/* Heading */}
         <div className="overflow-hidden z-20 relative lg:max-w-[65%]">
@@ -69,7 +69,7 @@ export default function HeroSection() {
           </FadeIn>
 
           <FadeIn delay={0.15} y={40} duration={0.9}>
-            <h1 className="text-[#EBA746] font-black uppercase tracking-tight leading-none w-full text-[clamp(2.75rem,10vw,140px)]">
+            <h1 className="text-[#EBA746] font-black uppercase tracking-tight leading-none w-full text-[clamp(2.25rem,7vw,100px)]">
               HELLO, I&apos;M THẢO VÂN
             </h1>
           </FadeIn>
