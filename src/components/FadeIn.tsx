@@ -9,6 +9,7 @@ interface FadeInProps extends MotionProps {
   y?: number;
   className?: string;
   as?: ElementType;
+  id?: string;
 }
 
 export default function FadeIn({
