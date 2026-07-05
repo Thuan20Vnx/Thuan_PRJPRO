@@ -4,27 +4,27 @@ const SERVICES = [
   {
     num: "01",
     name: "Content Writing",
-    desc: "Crafting clear, engaging copy and articles for social media, blogs, and campaigns that connect with the right audience."
+    desc: "Writing captions, articles, and campaign copy that sound human — clear, on-brand, and easy for the right audience to connect with."
   },
   {
     num: "02",
     name: "Social Media",
-    desc: "Planning and managing content calendars, growing communities, and building a consistent voice across platforms."
+    desc: "Planning content calendars and managing posting schedules to keep a page active, consistent, and easy to recognize."
   },
   {
     num: "03",
     name: "Event Communications",
-    desc: "Coordinating media outreach, press materials, and on-the-ground coverage to bring events to life and reach a wider audience."
+    desc: "Supporting event promotion and coverage — from press invites to on-site content — so the story doesn't end when the event does."
   },
   {
     num: "04",
     name: "Public Relations",
-    desc: "Building relationships with media and partners, drafting press releases, and shaping a clear, consistent brand narrative."
+    desc: "Drafting press releases and media materials, and learning how to keep a brand's message clear and consistent across channels."
   },
   {
     num: "05",
     name: "Photo & Video",
-    desc: "Producing and editing photo and video content that supports storytelling across digital and social channels."
+    desc: "Shooting and editing photo and video content for social platforms, built to support the story rather than distract from it."
   }
 ];
 

@@ -6,13 +6,14 @@ function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-interface ContactButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+interface ContactButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {}
 
 export default function ContactButton({ className, ...props }: ContactButtonProps) {
   return (
-    <button
+    <a
+      href="mailto:nguyenthithaovan0204@gmail.com"
       className={cn(
-        "rounded-full text-white font-medium uppercase tracking-widest transition-transform hover:scale-105 active:scale-95",
+        "inline-block rounded-full text-white font-medium uppercase tracking-widest transition-transform hover:scale-105 active:scale-95 cursor-pointer",
         "px-8 py-3 sm:px-10 sm:py-3.5 md:px-12 md:py-4",
         "text-xs sm:text-sm md:text-base",
         className
@@ -26,6 +27,6 @@ export default function ContactButton({ className, ...props }: ContactButtonProp
       {...props}
     >
       Contact Me
-    </button>
+    </a>
   );
 }

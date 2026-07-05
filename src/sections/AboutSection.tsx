@@ -37,15 +37,25 @@ export default function AboutSection() {
           </h2>
         </FadeIn>
 
-        <div className="flex flex-col items-center gap-16 sm:gap-20 md:gap-24 w-full">
-          <AnimatedText
-            text="I turn that noise into narratives worth stopping for. As a communications student, I combine content strategy, media production, and public relations to help brands earn attention — and keep it. Every story I shape is built to connect, not just to be seen."
-            className="text-[#2B3440] font-medium text-center leading-relaxed max-w-[560px] text-[clamp(1rem,2vw,1.35rem)]"
-          />
-
-          <FadeIn delay={0.2} y={30}>
-            <ContactButton />
+        <div className="flex flex-col md:flex-row items-center gap-12 sm:gap-16 md:gap-20 w-full">
+          <FadeIn delay={0.1} x={-40} y={0} duration={0.9} className="shrink-0">
+            <img
+              src="/thao-van-portrait.jpg"
+              alt="Thảo Vân portrait"
+              className="w-[220px] h-[280px] sm:w-[260px] sm:h-[330px] md:w-[300px] md:h-[380px] object-cover rounded-[32px] sm:rounded-[40px] border-2 border-white shadow-xl"
+            />
           </FadeIn>
+
+          <div className="flex flex-col items-center md:items-start gap-10 sm:gap-12 md:gap-14">
+            <AnimatedText
+              text="I turn that noise into narratives worth stopping for. As a communications student, I combine content strategy, media production, and public relations to help brands earn attention — and keep it. Every story I shape is built to connect, not just to be seen."
+              className="text-[#2B3440] font-medium text-center md:text-left leading-relaxed max-w-[560px] text-[clamp(1rem,2vw,1.35rem)]"
+            />
+
+            <FadeIn delay={0.2} y={30}>
+              <ContactButton />
+            </FadeIn>
+          </div>
         </div>
       </div>
     </section>
